@@ -184,6 +184,22 @@ legend {
   height: 88px;
 }
 
+#avatar-piloto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+    transition: border-color .18s ease;
+}
+
+#avatar-piloto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .botao-icone--simples {
   border: none;
   background: none;
@@ -758,6 +774,7 @@ legend {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  cursor: default;
 }
 
 .recurso-cartao {
@@ -1146,8 +1163,7 @@ legend {
 
 @media (min-width:640px) {
 
-  .destaque-acoes .botao,
-  .autenticacao-cartao .botao {
+  .destaque-acoes .botao, .autenticacao-cartao .botao {
     width: auto;
     display: inline-block;
     padding-left: 28px;
@@ -1652,4 +1668,402 @@ legend {
   font-weight: 700;
   color: var(--text);
   margin-top: 3px;
+}
+
+/* Meu Perfil */
+
+.perfil-destaque {
+  background: linear-gradient(160deg, var(--blue-primary), var(--blue-deep));
+  border-radius: var(--radius-lg);
+  height: 140px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.perfil-destaque-topo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.perfil-destaque-topo span {
+  color: #fff;
+  font-size: 18px;
+}
+
+.avatar-anel {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 4px solid var(--bg);
+  position: absolute;
+  left: 50%;
+  bottom: -48px;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.avatar-anel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil-nome {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  margin-top: 6px;
+}
+
+.perfil-sub {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--text-2);
+  margin-top: 2px;
+}
+
+.linha-estatistica {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px 0;
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.estatistica {
+  text-align: center;
+}
+
+.estatistica .numero {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.estatistica .rotulo {
+  font-size: 10px;
+  color: var(--text-3);
+  margin-top: 3px;
+}
+
+.lista-menu {
+    margin: auto;
+    text-align: center;
+    max-width: 560px;
+}
+
+#sair-da-conta {
+    margin-top: 50px;
+}
+
+.linha-menu {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 6px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .18s ease;
+}
+
+.linha-menu:hover {
+  background: var(--info-badge-bg);
+}
+
+.linha-menu .seta {
+  margin-left: auto;
+  color: var(--text-3);
+}
+
+/* Detalhes da Aeronave */
+
+.destaque-galeria {
+  position: relative;
+  height: 280px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.destaque-principal {
+  height: 100%;
+  position: relative;
+}
+
+.destaque-principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destaque-miniaturas {
+  position: absolute;
+  right: 7px;
+  top: 70px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.destaque-miniaturas img {
+  width: 60px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, .85);
+}
+
+.destaque-favorito {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: rgba(255, 255, 255, .92);
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disposicao-detalhe {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width:960px) {
+  .disposicao-detalhe {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+.etiqueta-detalhe {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+
+.linha-titulo-detalhe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 6px 0 18px;
+  flex-wrap: wrap;
+}
+
+.linha-titulo-detalhe h1 {
+  font-size: 26px;
+  color: var(--text);
+}
+
+.pilula-avaliacao {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.grade-estatisticas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+@media (min-width:520px) {
+  .grade-estatisticas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bloco-estatistica {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.bloco-estatistica .v {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.texto-corpo {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-2);
+  margin-bottom: 22px;
+}
+
+.comodidades {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.comodidade {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.linha-piloto {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 22px;
+  transition: box-shadow .2s ease;
+}
+
+.linha-piloto:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.linha-piloto .nome {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.linha-piloto .meta {
+  font-size: 12px;
+  color: var(--text-2);
+  margin-top: 3px;
+}
+
+.lista-avaliacoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-avaliacao {
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+
+.cabecalho-avaliacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.cabecalho-avaliacao .nome {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--text);
+}
+
+.cabecalho-avaliacao .data {
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+
+.estrelas {
+  color: var(--star);
+  font-size: 12.5px;
+}
+
+.texto-avaliacao {
+  font-size: 12.5px;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+.painel-reserva {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.painel-reserva .linha-preco {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.painel-reserva .rotulo {
+  font-size: 11px;
+  color: var(--text-3);
+  font-weight: 700;
+}
+
+.painel-reserva .v {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.fixo-inferior {
+  position: sticky;
+  bottom: 0;
+  z-index: 40;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  box-shadow: 0 -6px 20px rgba(17, 24, 39, .08);
+}
+
+.fixo-inferior .preco .rotulo {
+  font-size: 10px;
+  color: var(--text-3);
+  font-weight: 700;
+}
+
+.fixo-inferior .preco .v {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.fixo-inferior .botao {
+  width: auto;
+  padding: 14px 30px;
+}
+
+@media (max-width:859px) {
+  .fixo-inferior {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: var(--bottomnav-h);
+    border-radius: 0;
+  }
 }
