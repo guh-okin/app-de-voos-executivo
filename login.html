@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Altitude</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
+    <header class="barra-superior">
+        <div class="barra-superior-interna">
+            <div class="barra-superior-esquerda">
+                <a class="logo" href="index.html"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M2.5 19.5l19-7.5-19-7.5v6l14 1.5-14 1.5z" />
+                    </svg><span>Altitude</span></a>
+            </div>
+            <div class="barra-superior-acoes">
+                <a class="link-nav" href="login.html">Entrar</a>
+                <a class="botao botao-primario botao-embutido botao-pequeno" href="criar-conta.html">Criar conta</a>
+            </div>
+        </div>
+    </header>
+    <main id="conteudo" class="autenticacao-contentor">
+        <div class="autenticacao-cartao">
+            <h1 class="autenticacao-titulo">Login</h1>
+            <p class="autenticacao-subtitulo">Bem-vindo de volta</p>
+
+            <div class="conjunto-abas">
+                <input type="radio" name="tab-login" id="aba-login-email" checked>
+                <input type="radio" name="tab-login" id="aba-login-telefone">
+                <div class="abas-sublinhadas abas">
+                    <label class="aba-sublinhada" for="aba-login-email">Email</label>
+                    <label class="aba-sublinhada" for="aba-login-telefone">Número de Telefone</label>
+                </div>
+                <div class="paineis-abas">
+                    <div class="painel" id="painel-login-email">
+                        <div class="campo"><label for="email">Endereço de Email</label><input class="entrada" id="email"
+                                type="email" placeholder="email@exemplo.com"></div>
+                        <div class="campo">
+                            <div class="linha-rotulo"><label for="senha1">Senha</label><a href="#">Esqueci minha
+                                    senha</a></div>
+                            <div class="entrada-com-icone"><input class="entrada" id="senha1" type="password"
+                                    placeholder="••••••••••"><span class="olho" aria-hidden="true">👁</span></div>
+                        </div>
+                    </div>
+                    <div class="painel" id="painel-login-telefone">
+                        <div class="campo"><label for="telefone">Número</label><input class="entrada" id="telefone"
+                                type="tel" placeholder="+1 · Número de telefone"></div>
+                        <div class="campo">
+                            <div class="linha-rotulo"><label for="senha2">Senha</label><a href="#">Esqueci minha
+                                    senha</a></div>
+                            <div class="entrada-com-icone"><input class="entrada" id="senha2" type="password"
+                                    placeholder="••••••••••"><span class="olho" aria-hidden="true">👁</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <label class="linha-marcacao"><input type="checkbox" checked> Mantenha-me conectado</label>
+            <a class="botao botao-primario" href="home.html">Login</a>
+            <p class="texto-divisor">ou continue com</p>
+            <a class="botao botao-google" href="home.html"><svg width="18" height="18" viewBox="0 0 48 48"
+                    aria-hidden="true">
+                    <path fill="#4285F4"
+                        d="M45 24c0-1.6-.1-2.8-.4-4H24v7.6h11.9c-.5 3-2.3 6.6-6.7 9.2l6.5 5c3.9-3.6 6.3-9 6.3-15.4z" />
+                    <path fill="#34A853"
+                        d="M24 46c6 0 11-2 14.7-5.4l-6.5-5c-2 1.4-4.7 2.3-8.2 2.3-6.3 0-11.6-4.2-13.5-9.9l-6.8 5.3C7.3 41 15 46 24 46z" />
+                    <path fill="#FBBC05"
+                        d="M10.5 27.9c-.5-1.4-.8-2.9-.8-4.4s.3-3 .8-4.4l-6.8-5.3C2.4 16.9 1.5 20.3 1.5 24s.9 7.1 2.2 10.1l6.8-5.3z" />
+                    <path fill="#EA4335"
+                        d="M24 9.6c3.4 0 6.4 1.2 8.8 3.5l6-6C34.6 3.3 30 1 24 1 15 1 7.3 6 3.7 13.9l6.8 5.3C12.4 13.8 17.7 9.6 24 9.6z" />
+                </svg> Continue com Google</a>
+            <p class="rodape-link">Não tem uma conta? <a href="criar-conta.html">Criar uma conta</a></p>
+        </div>
+    </main>
+    <footer class="rodape-app">
+        <p class="rodape-app-credito">Altitude &copy; 2026 &mdash; Protótipo de Desenvolvimento Web Front-End
+        </p>
+    </footer>
+</body>
+
+</html>
