@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Altitude</title>
+    <meta name="description" content="Altitude — Aviação executiva sob medida. Home.">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -27,11 +28,143 @@
             </nav>
             <div class="barra-superior-acoes">
                 <a class="barra-superior-perfil" href="meu-perfil.html" aria-label="Meu perfil"><img
-                        src="https://static.wikia.nocookie.net/tvpediabrasil/images/6/6c/Ratinho1.jpg/revision/latest?cb=20190430143343&path-prefix=pt-br"
-                        alt="Foto de perfil de Carlos Alberto"></a>
+                        src="/img/perfil.png"
+                        alt="Foto de perfil"></a>
             </div>
         </div>
     </header>
+
+    <main id="conteudo" class="conteudo-principal contentor">
+        <div class="linha-saudacao">
+            <div class="flexivel-1">
+                <p class="sobretitulo">Olá, Carlos!</p>
+                <h1>Pronto para decolar?</h1>
+            </div>
+        </div>
+
+        <section class="cartao" aria-label="Busca de voo">
+            <h2 class="bloco-titulo">Para onde você quer ir?</h2>
+            <p class="bloco-subtitulo">Reserve uma aeronave agora.</p>
+            <div class="campo-par">
+                <div class="campo">
+                    <label for="destino1">Origem</label>
+                    <input class="entrada" id="destino1" value="São Paulo  GRU">
+                </div>
+                <div class="campo">
+                    <label for="destino2">Destino</label>
+                    <input class="entrada" id="destino2" value="Rio de Janeiro  GIG">
+                </div>
+            </div>
+            <div class="campo-par">
+                <div class="campo">
+                    <label for="data1">Ida</label>
+                    <input class="entrada" id="data1" value="24 / Fev / 2026">
+                </div>
+                <div class="campo">
+                    <label for="data2">Volta</label>
+                    <input class="entrada" id="data2" value="28 / Fev / 2026">
+                </div>
+            </div>
+            <label class="linha-marcacao"><input type="checkbox"> Apenas ida</label>
+            <a class="botao botao-primario botao-embutido" href="aeronaves-disponiveis.html">Buscar Aeronaves
+                Disponíveis</a>
+        </section>
+
+        <section aria-label="Próximos voos">
+            <h2 class="titulo-secao">Próximos voos</h2>
+            <article class="cartao-foto-viagem">
+                <img src="/img/próximo-voo.png" alt="Vista aérea do trajeto entre São Paulo e Rio de Janeiro">
+                <span class="selo-confirmado">CONFIRMADO</span>
+                <div class="sobreposicao">
+                    <p class="linha-voo">✈ 10:30 · São Paulo → Rio de Janeiro</p>
+                    <a class="botao botao-embutido" href="reservas.html">Detalhes do Voo</a>
+                </div>
+            </article>
+        </section>
+
+        <section aria-label="Histórico de viagens">
+            <h2 class="titulo-secao">Histórico de viagens</h2>
+            <div class="lista-historico">
+                <article class="linha-historico">
+                    <div>
+                        <p class="hora-historico">10:30</p>
+                        <p class="sub-historico">São Paulo</p>
+                    </div>
+                    <div class="meio-historico">3:55h<br>✈</div>
+                    <div>
+                        <p class="hora-historico">14:25</p>
+                        <p class="sub-historico">Rio de Janeiro</p>
+                    </div>
+                    <div class="direita-historico"><a class="link-botao" href="ver-nfse.html">Ver NFS-e</a>
+                        <p class="preco-historico">R$23.000</p>
+                    </div>
+                </article>
+                <article class="linha-historico">
+                    <div>
+                        <p class="hora-historico">10:30</p>
+                        <p class="sub-historico">São Paulo</p>
+                    </div>
+                    <div class="meio-historico">3:55h<br>✈</div>
+                    <div>
+                        <p class="hora-historico">14:25</p>
+                        <p class="sub-historico">Rio de Janeiro</p>
+                    </div>
+                    <div class="direita-historico"><a class="link-botao" href="ver-nfse.html">Ver NFS-e</a>
+                        <p class="preco-historico">R$22.670</p>
+                    </div>
+                </article>
+                <article class="linha-historico">
+                    <div>
+                        <p class="hora-historico">10:30</p>
+                        <p class="sub-historico">São Paulo</p>
+                    </div>
+                    <div class="meio-historico">3:55h<br>✈</div>
+                    <div>
+                        <p class="hora-historico">14:25</p>
+                        <p class="sub-historico">Rio de Janeiro</p>
+                    </div>
+                    <div class="direita-historico"><a class="link-botao" href="ver-nfse.html">Ver NFS-e</a>
+                        <p class="preco-historico">R$20.005</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape-app">
+        <p class="rodape-app-credito">Altitude &copy; 2026 &mdash; Protótipo de Desenvolvimento Web Front-End
+        </p>
+        <nav class="barra-inferior" aria-label="Navegação inferior">
+            <ul>
+                <li><a class="link-aba ativo" href="home.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M3 11l9-8 9 8" />
+                            <path d="M5 10v10h14V10" />
+                        </svg><span>Home</span></a></li>
+                <li><a class="link-aba" href="reservas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg><span>Reservas</span></a></li>
+                <li><a class="link-aba" href="aeronaves-disponiveis.html"><svg viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true">
+                            <path d="M2.5 19.5l19-7.5-19-7.5v6l14 1.5-14 1.5z" />
+                        </svg><span>Aeronaves</span></a></li>
+                <li><a class="link-aba" href="mensagens.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                        </svg><span>Mensagens</span></a></li>
+                <li><a class="link-aba" href="meu-perfil.html"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 21v-1a7 7 0 0114 0v1" />
+                        </svg><span>Perfil</span></a></li>
+            </ul>
+        </nav>
+    </footer>
+
 </body>
 
 </html>

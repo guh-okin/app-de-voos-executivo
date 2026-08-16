@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Altitude</title>
+    <meta name="description" content="Altitude — Aviação executiva sob medida. Reservas.">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
+    <header class="barra-superior">
+        <div class="barra-superior-interna">
+            <div class="barra-superior-esquerda"><a class="logo" href="index.html"><svg viewBox="0 0 24 24"
+                        fill="currentColor" aria-hidden="true">
+                        <path d="M2.5 19.5l19-7.5-19-7.5v6l14 1.5-14 1.5z" />
+                    </svg><span>Altitude</span></a></div>
+            <nav class="barra-superior-nav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="home.html" class="link-nav">Home</a></li>
+                    <li><a href="reservas.html" class="link-nav ativo" aria-current="page">Reservas</a></li>
+                    <li><a href="aeronaves-disponiveis.html" class="link-nav">Aeronaves</a></li>
+                    <li><a href="mensagens.html" class="link-nav">Mensagens</a></li>
+                    <li><a href="meu-perfil.html" class="link-nav">Perfil</a></li>
+                </ul>
+            </nav>
+            <div class="barra-superior-acoes">
+                <a class="barra-superior-perfil" href="meu-perfil.html" aria-label="Meu perfil"><img
+                        src="/img/perfil.png"
+                        alt="Foto de perfil"></a>
+            </div>
+        </div>
+    </header>
+    <main id="conteudo" class="conteudo-principal contentor">
+        <h1 class="titulo-pagina margem-superior-grande">Reservas</h1>
+        <div class="conjunto-abas">
+            <input type="radio" name="tab-res" id="aba-res-proximos" checked>
+            <input type="radio" name="tab-res" id="aba-res-historico">
+            <input type="radio" name="tab-res" id="aba-res-cancelados">
+            <div class="abas">
+                <label class="aba" for="aba-res-proximos">Próximos voos</label>
+                <label class="aba" for="aba-res-historico">Histórico</label>
+                <label class="aba" for="aba-res-cancelados">Cancelamentos</label>
+            </div>
+            <div class="paineis-abas">
+
+                <section class="painel" id="painel-res-proximos" aria-label="Próximos voos">
+                    <div class="grade-rotas">
+                        <article class="cartao cartao-rota">
+                            <div class="linha-rota">
+                                <div>
+                                    <p class="cidade-rota">São Paulo</p>
+                                    <p class="codigo-rota">GRU</p>
+                                </div>
+                                <div class="meio-rota" aria-hidden="true">✈</div>
+                                <div class="texto-direita">
+                                    <p class="cidade-rota">Brasília</p>
+                                    <p class="codigo-rota">BSB</p>
+                                </div>
+                            </div>
+                            <div class="separador-rota"></div>
+                            <div class="meta-rota"><span class="esquerda">📅 20 Jun 08:00 - 22 Jun 18:00</span></div>
+                            <div class="meta-rota"><span class="esquerda">✈ Phenom · 6 passageiros</span><span
+                                    class="selo confirmado">CONFIRMADO</span></div>
+                        </article>
+                        <article class="cartao cartao-rota">
+                            <div class="linha-rota">
+                                <div>
+                                    <p class="cidade-rota">Rio de Janeiro</p>
+                                    <p class="codigo-rota">GIG</p>
+                                </div>
+                                <div class="meio-rota" aria-hidden="true">✈</div>
+                                <div class="texto-direita">
+                                    <p class="cidade-rota">Curitiba</p>
+                                    <p class="codigo-rota">CWB</p>
+                                </div>
+                            </div>
+                            <div class="separador-rota"></div>
+                            <div class="meta-rota"><span class="esquerda">📅 25 Jun 10:30 - 27 Jun 16:20</span></div>
+                            <div class="meta-rota"><span class="esquerda">✈ Citation CJ4 · 8 passageiros</span><span
+                                    class="selo pendente">PENDENTE</span></div>
+                        </article>
+                        <article class="cartao cartao-rota">
+                            <div class="linha-rota">
+                                <div>
+                                    <p class="cidade-rota">São Paulo</p>
+                                    <p class="codigo-rota">GRU</p>
+                                </div>
+                                <div class="meio-rota" aria-hidden="true">✈</div>
+                                <div class="texto-direita">
+                                    <p class="cidade-rota">Salvador</p>
+                                    <p class="codigo-rota">SSA</p>
+                                </div>
+                            </div>
+                            <div class="separador-rota"></div>
+                            <div class="meta-rota"><span class="esquerda">📅 02 Jul 09:00 - 05 Jul 19:00</span></div>
+                            <div class="meta-rota"><span class="esquerda">✈ Phenom · 8 passageiros</span><span
+                                    class="selo confirmado">CONFIRMADO</span></div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="painel" id="painel-res-historico" aria-label="Histórico de voos">
+                    <div class="lista-historico">
+                        <article class="linha-historico">
+                            <div>
+                                <p class="hora-historico">10:30</p>
+                                <p class="sub-historico">São Paulo</p>
+                            </div>
+                            <div class="meio-historico">3:55h<br>✈</div>
+                            <div>
+                                <p class="hora-historico">14:25</p>
+                                <p class="sub-historico">Rio de Janeiro</p>
+                            </div>
+                            <div class="direita-historico"><a class="link-botao" href="#">Ver NFS-e</a>
+                                <p class="preco-historico">R$23.000</p>
+                            </div>
+                        </article>
+                        <article class="linha-historico">
+                            <div>
+                                <p class="hora-historico">10:30</p>
+                                <p class="sub-historico">São Paulo</p>
+                            </div>
+                            <div class="meio-historico">3:55h<br>✈</div>
+                            <div>
+                                <p class="hora-historico">14:25</p>
+                                <p class="sub-historico">Rio de Janeiro</p>
+                            </div>
+                            <div class="direita-historico"><a class="link-botao" href="#">Ver NFS-e</a>
+                                <p class="preco-historico">R$22.670</p>
+                            </div>
+                        </article>
+                        <article class="linha-historico">
+                            <div>
+                                <p class="hora-historico">10:30</p>
+                                <p class="sub-historico">São Paulo</p>
+                            </div>
+                            <div class="meio-historico">3:55h<br>✈</div>
+                            <div>
+                                <p class="hora-historico">14:25</p>
+                                <p class="sub-historico">Rio de Janeiro</p>
+                            </div>
+                            <div class="direita-historico"><a class="link-botao" href="#">Ver NFS-e</a>
+                                <p class="preco-historico">R$20.005</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="painel" id="painel-res-cancelados" aria-label="Voos cancelados">
+                    <div class="grade-rotas">
+                        <article class="cartao cartao-rota">
+                            <div class="linha-rota">
+                                <div>
+                                    <p class="cidade-rota">São Paulo</p>
+                                    <p class="codigo-rota">GRU</p>
+                                </div>
+                                <div class="meio-rota" aria-hidden="true">✈</div>
+                                <div class="texto-direita">
+                                    <p class="cidade-rota">Brasília</p>
+                                    <p class="codigo-rota">BSB</p>
+                                </div>
+                            </div>
+                            <div class="separador-rota"></div>
+                            <div class="meta-rota"><span class="esquerda">📅 20 Jun 08:00 - 22 Jun 18:00</span></div>
+                            <div class="meta-rota"><span class="esquerda">✈ Phenom · 6 passageiros</span><span
+                                    class="selo cancelado">CANCELADO</span></div>
+                        </article>
+                        <article class="cartao cartao-rota">
+                            <div class="linha-rota">
+                                <div>
+                                    <p class="cidade-rota">Rio de Janeiro</p>
+                                    <p class="codigo-rota">GIG</p>
+                                </div>
+                                <div class="meio-rota" aria-hidden="true">✈</div>
+                                <div class="texto-direita">
+                                    <p class="cidade-rota">Curitiba</p>
+                                    <p class="codigo-rota">CWB</p>
+                                </div>
+                            </div>
+                            <div class="separador-rota"></div>
+                            <div class="meta-rota"><span class="esquerda">📅 25 Jun 10:30 - 27 Jun 16:20</span></div>
+                            <div class="meta-rota"><span class="esquerda">✈ Citation CJ4 · 8 passageiros</span><span
+                                    class="selo cancelado">CANCELADO</span></div>
+                        </article>
+                        <article class="cartao cartao-rota">
+                            <div class="linha-rota">
+                                <div>
+                                    <p class="cidade-rota">São Paulo</p>
+                                    <p class="codigo-rota">GRU</p>
+                                </div>
+                                <div class="meio-rota" aria-hidden="true">✈</div>
+                                <div class="texto-direita">
+                                    <p class="cidade-rota">Salvador</p>
+                                    <p class="codigo-rota">SSA</p>
+                                </div>
+                            </div>
+                            <div class="separador-rota"></div>
+                            <div class="meta-rota"><span class="esquerda">📅 02 Jul 09:00 - 05 Jul 19:00</span></div>
+                            <div class="meta-rota"><span class="esquerda">✈ Phenom · 8 passageiros</span><span
+                                    class="selo cancelado">CANCELADO</span></div>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+    <footer class="rodape-app">
+        <p class="rodape-app-credito">Altitude &copy; 2026 &mdash; Protótipo de Desenvolvimento Web Front-End
+        </p>
+        <nav class="barra-inferior" aria-label="Navegação inferior">
+            <ul>
+                <li><a class="link-aba" href="home.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M3 11l9-8 9 8" />
+                            <path d="M5 10v10h14V10" />
+                        </svg><span>Home</span></a></li>
+                <li><a class="link-aba ativo" href="reservas.html" aria-current="page"><svg viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg><span>Reservas</span></a></li>
+                <li><a class="link-aba" href="aeronaves-disponiveis.html"><svg viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true">
+                            <path d="M2.5 19.5l19-7.5-19-7.5v6l14 1.5-14 1.5z" />
+                        </svg><span>Aeronaves</span></a></li>
+                <li><a class="link-aba" href="mensagens.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                        </svg><span>Mensagens</span></a></li>
+                <li><a class="link-aba" href="meu-perfil.html"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 21v-1a7 7 0 0114 0v1" />
+                        </svg><span>Perfil</span></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
